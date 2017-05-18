@@ -1,7 +1,3 @@
-// complex_numbers.cpp: определяет точку входа для консольного приложения.
-//
-
-#include "stdafx.h"
 #include <complex.h>
 #include <iostream>
 #include <math.h>
@@ -58,17 +54,17 @@ public:
 		setlocale(LC_ALL, "Russian");
 		double real1, image1, real2, image2;
 		int k, l;
-		cout << " Введите значение real1: ";
+		cout << " Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ real1: ";
 		cin >> real1;
-		cout << " Введите значение image1: ";
+		cout << " Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ image1: ";
 		cin >> image1;
-		cout << " Введите значение real2: ";
+		cout << " Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ real2: ";
 		cin >> real2;
-		cout << " Введите значение image2: ";
+		cout << " Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ image2: ";
 		cin >> image2;
-		cout << " Введите действительное число для умножения: ";
+		cout << " Г‚ГўГҐГ¤ГЁГІГҐ Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г®ГҐ Г·ГЁГ±Г«Г® Г¤Г«Гї ГіГ¬Г­Г®Г¦ГҐГ­ГЁГї: ";
 		cin >> k;
-		cout << " Введите действительное число для деления: ";
+		cout << " Г‚ГўГҐГ¤ГЁГІГҐ Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г®ГҐ Г·ГЁГ±Г«Г® Г¤Г«Гї Г¤ГҐГ«ГҐГ­ГЁГї: ";
 		cin >> l;
 		complex x = { real1,image1 };
 		complex y = { real2,image2 };
@@ -76,15 +72,15 @@ public:
 		complex dif = sub(x, y);
 		complex mul = multiplication(x, k);
 		complex div = mydiv(x, l);
-		printf(" Сумма комплексных чисел = (%5.2lf, %5.2lfi)\n", sum.real, sum.image);
-		printf(" Разность комплексных чисел = (%5.2lf, %5.2lfi)\n", dif.real, dif.image);
-		printf(" Произведение комплексного и действительного числа = (%5.2lf, %5.2lfi)\n", mul.real, mul.image);
+		printf(" Г‘ГіГ¬Г¬Г  ГЄГ®Г¬ГЇГ«ГҐГЄГ±Г­Г»Гµ Г·ГЁГ±ГҐГ« = (%5.2lf, %5.2lfi)\n", sum.real, sum.image);
+		printf(" ГђГ Г§Г­Г®Г±ГІГј ГЄГ®Г¬ГЇГ«ГҐГЄГ±Г­Г»Гµ Г·ГЁГ±ГҐГ« = (%5.2lf, %5.2lfi)\n", dif.real, dif.image);
+		printf(" ГЏГ°Г®ГЁГ§ГўГҐГ¤ГҐГ­ГЁГҐ ГЄГ®Г¬ГЇГ«ГҐГЄГ±Г­Г®ГЈГ® ГЁ Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г®ГЈГ® Г·ГЁГ±Г«Г  = (%5.2lf, %5.2lfi)\n", mul.real, mul.image);
 		if (l!=0)
-		{ printf(" Частное комплексного и действительного числа = (%5.2lf, %5.2lfi)\n", div.real, div.image);
+		{ printf(" Г—Г Г±ГІГ­Г®ГҐ ГЄГ®Г¬ГЇГ«ГҐГЄГ±Г­Г®ГЈГ® ГЁ Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г®ГЈГ® Г·ГЁГ±Г«Г  = (%5.2lf, %5.2lfi)\n", div.real, div.image);
 		}
 		if(l==0)
 		{
-			cout << " Делить на ноль недъльзя!!!" << endl;
+			cout << " Г„ГҐГ«ГЁГІГј Г­Г  Г­Г®Г«Гј Г­ГҐГ¤ГєГ«ГјГ§Гї!!!" << endl;
 		}
 	    system(" pause ");
 	    return 0;
